@@ -1,16 +1,13 @@
-// Шаг 1 - импорт хука
 import { useState } from "react";
-
 
 import "./styles.css";
 import Button from "components/Button/Button";
 
 function Counter() {
   const [counter, setCounter] = useState<number>(0);
-  console.log(counter);
 
   const onMinusClick = (): void => {
-  setCounter((prevState) => prevState - 1);
+    setCounter((prevState) => prevState - 1);
   };
 
   const onPlusClick = (): void => {
