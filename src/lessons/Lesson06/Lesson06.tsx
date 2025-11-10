@@ -1,26 +1,27 @@
 import "./styles.css";
+
 function Lesson06() {
-// Типы переменных
-// Тип переменных указывается после название через двоеточие
-// 1. Типизация строк - string
-let userName: string = "Mary";
-userName = `Tom`;
-// userName = true;
-let result: string = 1 + 2 + "4";
+  // Типы переменных
+  // Тип переменных указывается после название через двоеточие
+  // 1. Типизация строк - string
+  let userName: string = "Mary";
+  userName = `Tom`;
+  // userName = true;
+  let result: string = 1 + 2 + "4";
 
-// 2. Типизация чисел - number
-let simpleNumber: number = 23;
-simpleNumber = Infinity;
-simpleNumber = 2.6;
-simpleNumber = -2;
-simpleNumber = NaN;
+  // 2. Типизация чисел - number
+  let simpleNumber: number = 23;
+  simpleNumber = Infinity;
+  simpleNumber = 2.6;
+  simpleNumber = -2;
+  simpleNumber = NaN;
 
-// 3. Boolean - логический тип
-let isAdmin: boolean = true;
-isAdmin = false;
-isAdmin = userName !== "Bob";
+  // 3. Типизация логического типа - boolean
+  let isAdmin: boolean = true;
+  isAdmin = false;
+  isAdmin = userName !== "Bob";
 
-  // 4. Типизация неопределённого типа - undefined 
+  // 4. Типизация неопределённого типа - undefined
   let age: undefined = undefined;
 
   // 5. Типизация пустого типа - null
@@ -37,6 +38,7 @@ isAdmin = userName !== "Bob";
   // будут храниться в массиве, а затем ставим квадратные скобки
   const colors: string[] = ["red", "blue", "green"];
   // colors.push(65789);
+
   // Для типизация массива постоянной длины(можно с разными типами) можно
   // использовать кортеж (tupel)
   const colorCode: [string, number] = ["blue", 673];
@@ -55,10 +57,10 @@ isAdmin = userName !== "Bob";
 
   // Типизация параметров функции
   const getUserData = (firstName: string, age: number): string => {
-    return `${firstName} - ${age} y.o.`
-  }
+    return `${firstName} - ${age} y.o.`;
+  };
 
-   //   Автоматическое опеределение типов
+  // 9. Автоматическое опеределение типов
   let name = "Bob";
   //   name = true;
 
@@ -68,13 +70,15 @@ isAdmin = userName !== "Bob";
 // 10. Union типы
 let color: string | number = 78;
 color = "blue";
+
 const example: (string | number)[] = [34, "green", 67];
 
-return (
+  return (
     <div className="lesson06-wrapper">
       <div>Lesson06 - TypeScript</div>
       {getUserData("Tom", 45)}
     </div>
   );
 }
-export default Lesson06;  
+
+export default Lesson06;
