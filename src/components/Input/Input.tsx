@@ -1,4 +1,4 @@
- import { ErrorMessage, InputContainer, InputElement, Label } from "./styles";
+import { ErrorMessage, InputContainer, InputElement, Label } from "./styles";
 import type { InputProps } from "./types";
 
 function Input({
